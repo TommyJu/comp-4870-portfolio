@@ -1,9 +1,11 @@
 {
+  "homepage": "https://TommyJu.github.io/comp-4870-portfolio/",
   "name": "student-management-app",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
     "axios": "^0.21.1",
+    "gh-pages": "^6.3.0",
     "mssql": "^11.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,7 +21,9 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
